@@ -1,0 +1,20 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "next/typescript"
+  ],
+  "rules": {
+    "@typescript-eslint/no-unused-vars": [
+      "warn", // Warn instead of error for unused variables
+      {
+        "vars": "all",
+        "args": "after-used",
+        "ignoreRestSiblings": true
+      }
+    ],
+    "@typescript-eslint/no-explicit-any": "off", // Disable the rule for explicit any usage
+    "@typescript-eslint/ban-ts-comment": "off", // Allow TypeScript comments like @ts-ignore
+    "react/react-in-jsx-scope": "off", // Disable React in scope rule for modern Next.js
+    "react/jsx-key": "warn" // Warn for missing keys in lists
+  }
+}

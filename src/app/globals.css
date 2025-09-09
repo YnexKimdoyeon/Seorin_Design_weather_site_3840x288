@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 로컬 폰트 정의 */
+@font-face {
+  font-family: 'AppleSDGothicNeoB00';
+  src: url('/fonts/AppleSDGothicNeoB00.ttf') format('truetype');
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'AppleSDGothicNeoB00', 'Apple SD Gothic Neo', 'Malgun Gothic', '맑은 고딕', 'Nanum Gothic', '나눔고딕', 'Noto Sans KR', sans-serif;
+}
